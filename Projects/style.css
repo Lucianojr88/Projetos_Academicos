@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-between;
+    }
+    li{
+      padding: 10px;
+      }
+      .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        }
+        h1{
+          margin-top: 50px;
+          text-align: center;
+          font-size: 30px;
+        }
+        p{
+          font-size: 20px;
+        }
+        a{
+          font-size: 20px;
+          text-decoration: none;
+          color: black;
+        }
+        a:hover{
+          text-decoration: underline;
+  
+      }
+      form input{
+        width: 300px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      button{
+        width: 300px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      #messageBox {
+        border: 2px solid #000;
+        padding: 10px;
+        margin-top: 20px;
+        display: none;
+    }
+    
+    #message {
+        font-size: 18px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
