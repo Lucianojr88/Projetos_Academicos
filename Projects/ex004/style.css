@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+/* Ajustes do corpo da página */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+}
+main {
+  padding: 7rem 0;
+}
+h1 {
+  color: blueviolet;
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 4.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", arial, cursive;
+}
+h2 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.boxes {
+  /* height: calc(100vh - (7 * 2rem)); <== propriedade de cálculo onde ajustamos a altura da tela subtraindo o espaçamento dado pelo padding colocado em outro atributo */
+  height: 100vh;
+  position: relative;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 2rem 5rem;
+  align-content: center;
+}
+.box {
+  min-height: 10rem;
+  min-width: 20rem;
+  padding: 1.5rem;
+  border: 10px solid red;
+  border-radius: 0.4rem;
+  background-color: #4361ee;
+  color: #fff;
+  font-size: 4rem;
+  order: 10;
+  /*flex-basis: 30%;  <== Bam para trabalhar ocm tamanhos fixos*/
+  flex: 1; /*<== Coloca as caixas para tomarem o máximo de espaço disponível */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2rem;
+}
+.box:nth-child(3) {
+  /*<== Consigo definir a ordem de uma div na sequência flex */
+  order: 1;
+}
+.box:nth-child(1) {
+  order: 4;
+}
+.box:nth-child(5) {
+  order: 2;
+}
+.box p, button{
+  font-size: 4rem;
+}
