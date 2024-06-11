@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Tabelas em HTML</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" id="logo">
+          <img src="../images/casa.png" alt="Logo" width="50" />
+        </a>
+        <ul id="links">
+          <li><a href="https://stateofhtml.com" target="_blank">HTML</a></li>
+          <li><a href="https://stateofcss.com" target="_blank">CSS</a></li>
+          <li>
+            <a href="https://stateofjs.com" target="_blank">JAVASCRIPT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main class="container">
+      <h1>Tabelas em HTML</h1>
+      <section class="list-table">
+        <div class="tabela">
+          <h2>Tabelas de dados</h2>
+          <table border="2">
+            <thead>
+              <th>Nome</th>
+              <th>E-mail</th>
+              <th>Telefone</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carol Danvers</td>
+                <td>carol.danvers@email.com</td>
+                <td>+55 (71) 905148261</td>
+              </tr>
+              <tr>
+                <td>Peter Parker</td>
+                <td>peter.parker@email.com</td>
+                <td>+55 (71) 987244565</td>
+              </tr>
+              <tr>
+                <td>Tony Stark</td>
+                <td>tony.stark@email.com</td>
+                <td>+55 (71) 984821679</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tabela">
+          <h2>Tabelas Financeiras</h2>
+          <table border="2">
+            <thead>
+              <th>Data</th>
+              <th>Valor</th>
+              <th>Descrição</th>
+              <th>Aplicação</th>
+              <th>Destino</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06/06/2024</td>
+                <td rowspan="2">R$ 2.277,00</td>
+                <td rowspan="2">Salário</td>
+                <td rowspan="2">Pagamento de Boletos</td>
+                <td rowspan="3">Conta Bancária</td>
+              </tr>
+              <tr>
+                <td>06/07/2024</td>
+                <!-- <td>R$ 2.277,00</td> -->
+                <!-- <td>Salário</td> -->
+                <!-- <td>Pagamento de Boletos</td> -->
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <td rowspan="2">08/07/2024</td>
+                <td>R$ 1.144,00</td>
+                <td>13º Salário</td>
+                <td>Investimento</td>
+                <!-- <td>Conta Bancária</td> -->
+              </tr>
+              <tr>
+                <!-- <td>08/07/2024</td> -->
+                <td>R$ 5.000,00</td>
+                <td>Rifa</td>
+                <td colspan="2">Quitação de dívidas</td>
+                <!-- <td>Quitação de dívidas</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
