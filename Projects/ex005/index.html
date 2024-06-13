@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores, Responsividade e animações</title>
+    <link
+      rel="shortcut icon"
+      href="../images/coconut.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main>
+      <section>
+        <h1>Seletores, Responsividade e Animações</h1>
+        
+        <div class="sessao-tabela">
+          <h2>Seletores</h2>
+          <table border="2" class="tabela-seletores" id="tabela-id">
+            <thead data-element="EL">
+              <th>Tipos de seletores</th>
+              <th>Prioridade</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ID</td>
+                <td>1,0,0</td>
+              </tr>
+              <tr>
+                <td>Classe</td>
+                <td>0,1,0</td>
+              </tr>
+              <tr>
+                <td>Elemento</td>
+                <td>0,0,1</td>
+              </tr>
+              <tr>
+                <td>Pseudo-classe</td>
+                <td>0,1,0</td>
+              </tr>
+              <tr data-element="EL">
+                <td>Pseudo-elemento</td>
+                <td>0,1,0</td>
+              </tr>
+              <tr>
+                <td>Universal</td>
+                <td>0,0,0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="anime">
+        <h2>Animações</h2>
+        
+        <div class="botoes">
+          <button data-anime="ANI">Visite o site do James Webb</button>
+          <a href="daskj" data-anime="ANI">Visite o site do James Webb</a>
+        <a href="dakj" data-anime="HBB">Visite o site do Hubble</a>
+        </div>
+        <div class="spinner-container">
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

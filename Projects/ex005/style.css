@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Inserção e ajustes da imagem capa da página */
+.bg {
+  background-image: url("../images/nebulosa-1366.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+}
+img {
+  clear: both;
+  height: 10rem;
+  width: 14rem;
+  object-fit: cover;
+}
+
+/* Ajustes do corpo da página */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 1rem;
+  text-align: center;
+  text-wrap: wrap;
+}
+.sessao-tabela {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* Display, Visibility e Opacity */
+h1 {
+  color: #e76f51;
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0.3; */
+}
+h2 {
+  color: #f8f9fa;
+  background-color: #e76f51;
+}
+
+/* Formas de interagir com a tabela utilizando os seletores */
+
+#tabela-id {
+  /* <== Pelo ID (prioridade maior) */
+  /* background-color: #d4caf8; */
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.tabela-seletores {
+  /* <== Pela classe (segunda prioridade) */
+  background-color: #cbf3f0;
+  border-collapse: collapse;
+}
+table {
+  /* <== pelo elemento (ultima prioridade) */
+  width: 100%;
+  border-collapse: collapse;
+  /* background-color: #f1f8ca; */
+}
+/* Ajustes internos da tabela */
+.tabela-seletores td,
+.tabela-seletores th {
+  border: 2px solid #fff;
+  padding: 8px;
+}
+/* Data atributes (personalizar atributo) */
+[data-element="EL"] {
+  background-color: #2ec4b6;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+  /* <== É possível definir novas propriedades a partir de determinada largura mínima ou máxima, com finalidade de atender diferentes tipos de dispositivos. */
+  .bg {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .bg {
+    height: 30vh;
+  }
+}
+@media print {
+  /* <== É possível definir por exemplo, quando o usuário for imprimir a página, que a imagem desapareça */
+  .bg {
+    display: none;
+  }
+}
+
+/* Animações */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a,
+button {
+  width: 30vh;
+  margin-top: 5rem;
+  background-color: #4361ee;
+  color: #fff;
+  padding: 1rem;
+  border: none !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  text-decoration: underline !important;
+  color: #e76f51;
+}
+
+[data-anime="ANI"] {
+  display: inline-block;
+  transform: scale(1) rotate(0deg) translateY(1rem); /* <== Propriedade utilizada para aumentar ou diminuir a escala de um elemento, para definir a rotação de um elemento e também posicionar o elemento como quiser no eixo X, Y ou Z. */
+  transition: all 1.2s ease-in-out;
+}
+
+[data-anime="ANI"]:hover {
+  /* <== Pseudo-classe definida para quando passar o mouse sobre o item, posso selecionar outra exibição */
+  transform: scale(1.5) rotate(30deg) translateY(0rem);
+  background-color: #2ec4b6;
+  /* color: #fff; */
+}
+
+/* Animação com CSS Keyframes */
+[data-anime="HBB"]{
+  animation: pulse 1s infinite; /* <== Com essa propriedade, posso inserir animação no formato pulsação e  */
+  animation-direction: alternate-reverse; /* Posso definir a direção por aqui ou inserir mais informações aos 50% da animação por exemplo. */
+  transform: scale(1);
+}
+
+@keyframes pulse {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+/* Animação com CSS Loading */
+.spinner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#SVGRepo_iconCarrier{
+  animation: load 1s infinite;
+  transform: scale(0.1);
+}
+
+@keyframes load{
+  0%{
+    transform: scale(0.1) rotateZ(0deg);
+  }
+  50%{
+    transform: scale(0.1) rotateZ(240deg);
+  }
+  100%{
+    transform: scale(0.1) rotateZ(360deg);
+  }
+}
