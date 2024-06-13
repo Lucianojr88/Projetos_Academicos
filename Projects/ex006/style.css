@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ajustes do corpo da página */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  justify-content: center;
+}
+.box{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border: 2px solid red;
+}
