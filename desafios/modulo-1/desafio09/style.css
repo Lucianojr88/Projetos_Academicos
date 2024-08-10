@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #1b263b;
+  color: #f8f9fa;
+}
+header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(246px, 1fr)); 
+  /*Este é um atributo do CSS Grid Layout que define a estrutura das colunas dentro de um grid container. Ele especifica o número e o tamanho das colunas em um grid layout.
+  Quando você combina tudo, a linha grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); faz o seguinte: 
+  - Cria um grid com colunas que têm, no mínimo, 200 pixels de largura.
+  - O número de colunas ajusta-se automaticamente com base no espaço disponível no container pai.
+  - As colunas podem se expandir para ocupar mais espaço, até um máximo de 1fr (uma fração do espaço disponível).*/
+}
+.videos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+.voltar {
+  background: url("./icons/back.svg") no-repeat #f8f9fa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.video-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  padding-bottom: 56.25%; /* Proporção de 16:9 */
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.button{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.button a:hover{
+  color: #628ee1;
+  transition: all 0.3s;
+}
