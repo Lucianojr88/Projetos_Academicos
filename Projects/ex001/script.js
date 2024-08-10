@@ -7,7 +7,7 @@
 document.getElementById("showNameButton").addEventListener("click", function() {
   var messageElement = document.getElementById("message");
   var messageBox = document.getElementById("messageBox");
-  var nameInJapanese = "Sugawara Tomorii Nuhabu";
+  var nameInJapanese = "Tingua NeyhHotaro";
   messageElement.innerHTML = `O seu nome em japonês é: <strong>"${nameInJapanese}"</strong>`;
   messageBox.style.display = 'block';
 });
