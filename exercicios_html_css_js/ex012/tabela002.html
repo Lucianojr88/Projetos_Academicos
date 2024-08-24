@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anatomia de tabelas grandes</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+      width: 600px;
+      border-collapse: collapse;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    caption{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 7px;
+      background-color: lightgray;
+    }
+    thead > tr > th{
+      position: sticky;
+      top: -1px;
+      background-color: #333;
+    }
+    th{
+      background-color: #333;
+      color: #fff;
+      font-weight: bold;
+    }
+    tr{
+      text-align: center;
+    }
+    tbody > tr:nth-child(2n){
+      background-color: rgb(194, 194, 194);
+    }
+    td{
+      /* width: 200px; */
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>USO DE TABELAS GRANDES</h1>
+  <table>
+    <thead><tr>
+      <th scope="col">Nome</th>
+      <th scope="col" style="width: 80px;">Idade</th>
+      <th scope="col">Email</th>
+    </tr></thead>
+    <tbody><tr>
+      <td>Luciano</td>
+      <td>27</td>
+      <td>luciano@mail.com</td>
+    </tr>
+    <tr>
+      <td>Claudio</td>
+      <td>19</td>
+      <td>claudio@mail.com</td>
+    </tr>
+    <tr>
+      <td>Edenilson</td>
+      <td>15</td>
+      <td>edenilson@mail.com</td>
+    </tr>
+    <tr>
+      <td>Luciano</td>
+      <td>27</td>
+      <td>luciano@mail.com</td>
+    </tr>
+    <tr>
+      <td>Claudio</td>
+      <td>19</td>
+      <td>claudio@mail.com</td>
+    </tr>
+    <tr>
+      <td>Edenilson</td>
+      <td>15</td>
+      <td>edenilson@mail.com</td>
+    </tr>
+    <tr>
+      <td>Luciano</td>
+      <td>27</td>
+      <td>luciano@mail.com</td>
+    </tr>
+    <tr>
+      <td>Claudio</td>
+      <td>19</td>
+      <td>claudio@mail.com</td>
+    </tr>
+    <tr>
+      <td>Edenilson</td>
+      <td>15</td>
+      <td>edenilson@mail.com</td>
+    </tr>
+    <tr>
+      <td>Luciano</td>
+      <td>27</td>
+      <td>luciano@mail.com</td>
+    </tr>
+    <tr>
+      <td>Claudio</td>
+      <td>19</td>
+      <td>claudio@mail.com</td>
+    </tr>
+    <tr>
+      <td>Edenilson</td>
+      <td>15</td>
+      <td>edenilson@mail.com</td>
+    </tr>
+    </tbody>
+    <tfoot><tr>
+      <th colspan="2" scope="row">Total de Nomes</th>
+      <th>12</th>
+    </tr></tfoot>
+  </table>
+  <table>
+    <caption>Cronograma de Estudos</caption>
+    <thead>
+      <tr>
+        <th scope="col">&nbsp;</th>
+        <th scope="col">SEG</th>
+        <th scope="col">TER</th>
+        <th scope="col">QUA</th>
+        <th scope="col">QUI</th>
+        <th scope="col">SEX</th>
+      </tr>
+    </thead>
+    <tbody><tr>
+      <td>09:00</td>
+      <td>HTML e CSS</td>
+      <td>JS</td>
+      <td>LÓGICA</td>
+      <td>INGLÊS</td>
+      <td>JAVA</td>
+    </tr>
+    <tr>
+      <td>10:00</td>
+      <td>JAVA</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>INGLÊS</td>
+      <td>LÓGICA</td>
+    </tr>
+    <tr>
+      <td>11:00</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>INGLÊS</td>
+      <td>JAVA</td>
+      <td>LÓGICA</td>
+    </tr>
+    <tr>
+      <td>12:00</td>
+      <td>JAVA</td>
+      <td>HTML e CSS</td>
+      <td>LÓGICA</td>
+      <td>JS</td>
+      <td>INGLÊS</td>
+    </tr>
+    <tr>
+      <td>14:00</td>
+      <td>JAVA</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>INGLÊS</td>
+      <td>LÓGICA</td>
+    </tr>
+    <tr>
+      <td>15:00</td>
+      <td>INGLÊS</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>JAVA</td>
+      <td>LÓGICA</td>
+    </tr>
+    <tr>
+      <td>16:00</td>
+      <td>JAVA</td>
+      <td>LÓGICA</td>
+      <td>HTML e CSS</td>
+      <td>JS</td>
+      <td>INGLÊS</td>
+    </tr>
+    <tr>
+      <td>17:00</td>
+      <td>INGLÊS</td>
+      <td>LÓGICA</td>
+      <td>JS</td>
+      <td>JAVA</td>
+      <td>HTML e CSS</td>
+    </tr>
+    <tr>
+      <td>18:00</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>JAVA</td>
+      <td>LÓGICA</td>
+      <td>INGLÊS</td>
+    </tr>
+    <tr>
+      <td>19:00</td>
+      <td>JAVA</td>
+      <td>HTML e CSS</td>
+      <td>INGLÊS</td>
+      <td>LÓGICA</td>
+      <td>JS</td>
+    </tr>
+    <tr>
+      <td>20:00</td>
+      <td>LÓGICA</td>
+      <td>JAVA</td>
+      <td>HTML e CSS</td>
+      <td>JS</td>
+      <td>INGLÊS</td>
+    </tr>
+    <tr>
+      <td>21:00</td>
+      <td>JS</td>
+      <td>HTML e CSS</td>
+      <td>INGLÊS</td>
+      <td>JAVA</td>
+      <td>LÓGICA</td>
+    </tr></tbody>
+  </table>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam distinctio veniam, quos est fugit pariatur nihil vel expedita nobis iure quia suscipit esse architecto! Molestias fuga at autem voluptas?
+  Dicta iusto eius quae ipsa quas nihil ex iste delectus itaque deleniti, dignissimos ut quibusdam dolores dolore? Voluptatibus veritatis voluptas error quod, a magnam sit expedita corporis. Eius, consectetur quas?
+  Laborum enim officia, sit eius officiis magnam incidunt. Culpa iste quis sed soluta aliquid laudantium quo, quam tempore error, magni recusandae, praesentium quibusdam? Esse in quas laboriosam illum. Doloremque, perspiciatis!
+  Quo delectus, ullam voluptatum illum cum veniam, molestias, magnam facere eum maxime blanditiis vero minima in libero! Sint fugit placeat deleniti minus officiis error tempora vero eum, alias, iusto illo?
+  Blanditiis labore, adipisci ducimus unde provident velit dolorum nesciunt asperiores dicta rem rerum ullam fugiat magnam praesentium veniam possimus eligendi dolores, corporis atque. Maiores error, similique autem laudantium amet illo.
+  Totam natus velit id neque rerum? Libero, repudiandae consectetur facere incidunt ratione reiciendis, culpa officia nemo ea sequi cupiditate ab minima, quas voluptate tempore modi quia perspiciatis. Veniam, esse odio!
+  Eius culpa recusandae rem unde modi, facilis itaque nobis, esse omnis iusto ab. Consectetur obcaecati velit iure deleniti unde sapiente at rerum itaque magnam rem blanditiis, distinctio aliquam alias quaerat?
+  Dolor, sed autem dolorem est blanditiis fugit, saepe id nisi veniam modi optio perferendis repudiandae aliquid ipsam vero beatae illum et officia mollitia ipsa nemo accusantium? Deserunt repellat expedita ex?
+  Esse perferendis voluptas nobis dicta iusto natus numquam voluptatem magni omnis veritatis quos rerum dolores repellendus sed fuga voluptate vero, libero consequatur quod atque reiciendis perspiciatis doloremque? Voluptatum, accusamus debitis!
+  Id molestiae quisquam laudantium voluptatibus inventore nobis ducimus! Iste officiis sunt perspiciatis tenetur cum maxime voluptates repellendus iusto. Culpa, corrupti. Sequi praesentium enim veniam ad labore illo quae ea temporibus!
+  Ratione, natus laboriosam. Fugit, quo. Quod doloremque natus, esse ipsum debitis sequi quas, ipsam officiis non vitae assumenda labore dolor ut! Labore error voluptas suscipit quisquam consequatur, voluptate harum ea.
+  Animi ipsum facere ab dignissimos ad vel quis saepe omnis nostrum cupiditate consectetur quisquam repellat iure natus ea officiis temporibus porro, praesentium dolores pariatur sed debitis itaque! Vero, nihil harum!
+  Voluptate enim accusamus perferendis commodi tempore sapiente labore ipsa illo aliquam assumenda tempora magnam fugiat, delectus voluptatibus, id nam repudiandae provident quasi. Doloribus explicabo veritatis animi ducimus expedita numquam nemo.
+  Ratione, vitae numquam distinctio perspiciatis accusantium qui perferendis est quo quasi corrupti ea alias at repudiandae. Rerum, unde necessitatibus nemo nobis doloremque non voluptatem aperiam voluptatibus recusandae? Debitis, vero voluptates?
+  Magni rem itaque ea dolor vel tempora soluta sint eveniet neque, eos doloribus voluptatibus iusto totam. Autem iure consequuntur sapiente doloremque dolor provident possimus, placeat molestias repudiandae. Aliquid, nesciunt id!
+  Maiores recusandae quibusdam architecto reiciendis eius accusantium quis labore quasi ipsa, quidem, voluptas commodi ipsam, eligendi repellat dolor aliquam dolore tempore quaerat dolores doloremque vero atque saepe maxime ea. Architecto?
+  Voluptas eligendi inventore suscipit pariatur cumque architecto et iusto nulla distinctio? Quae repellat ratione atque possimus inventore quia. Nobis quaerat dignissimos quasi rem porro molestias earum illum? Nulla, similique ipsam.
+  Ab ullam similique illo, corporis earum repellendus quod nulla laudantium ea obcaecati adipisci voluptas maxime reprehenderit aliquid quos dolor accusamus cumque sunt voluptate aperiam ducimus saepe. Distinctio non ex ullam.
+  Fugit deserunt, optio omnis alias delectus dolor maxime ab, impedit ducimus quidem deleniti saepe facere est atque. Odio fuga voluptates ut? Fuga similique fugiat autem laborum doloribus atque, ipsam molestias!
+  Voluptates non quo sint repellat veniam, porro eaque quisquam. Commodi, dolore, unde animi ea nam reprehenderit perspiciatis molestiae facilis saepe vero quibusdam beatae, molestias eos! Ratione ullam repellendus molestiae atque.
+  Nostrum, amet. Numquam repudiandae iste exercitationem tempore quasi, libero molestias laboriosam praesentium quibusdam ipsam, fugiat a animi blanditiis earum aliquam. Repudiandae quae eos autem praesentium amet, doloribus provident quis expedita?
+  Laudantium officia, asperiores veritatis cumque optio dignissimos magnam nostrum ipsam nobis fugiat, vel facilis eveniet possimus a laborum, maxime labore adipisci quibusdam necessitatibus minus dolore dolores? Aliquid unde doloribus totam.
+  Animi deleniti, repellat quo dicta facilis nesciunt similique quibusdam deserunt. Consectetur autem sunt velit nostrum maiores tenetur. Autem quos delectus fugit quae distinctio velit! Sit cumque doloremque quidem dicta corporis?
+  Reiciendis autem molestiae cumque accusantium itaque in asperiores recusandae facere ex quas, totam assumenda ad possimus dicta molestias perferendis maiores, architecto deserunt nisi delectus. Saepe sequi fugiat eos dolores neque?
+  Quisquam non dolorum id officiis tenetur quidem doloribus esse a sequi asperiores ea aspernatur ex repellat cum distinctio atque, porro, unde quae quos vero. Asperiores porro voluptas officiis vel sapiente.
+  Officiis cum, quibusdam obcaecati ullam animi ea vero, quo iure temporibus nihil natus rem quisquam enim! Laborum facilis magnam nam odio accusantium dolorum sapiente rerum sed aliquid quia, inventore deserunt!
+  Culpa quam facilis est sed pariatur tempore. At itaque sit, perferendis totam nisi quam rem illo, ab saepe modi exercitationem reprehenderit quaerat id autem accusantium aspernatur soluta repellat nostrum animi!
+  Ex repudiandae corrupti illum iusto ut veniam asperiores accusamus, vitae corporis eligendi tempore, reiciendis placeat temporibus est qui enim, voluptatum quam! Accusamus, ut? Eius vitae natus rerum repellendus facere quia!
+  Consectetur commodi eum ex amet, nobis, dignissimos doloremque similique dolorem nostrum, est ad ratione nesciunt! Cum explicabo necessitatibus dolorem aliquam at possimus, provident minima libero adipisci fuga, impedit, animi similique!
+  Accusamus velit quis doloribus dolorum, rem praesentium quos, nostrum corporis odio molestiae sapiente aspernatur unde quam provident, optio voluptas doloremque? Quo, nulla! Consectetur nemo sunt nam ea obcaecati delectus consequuntur!
+  Maxime reiciendis suscipit id libero possimus, minima vero illo sed animi expedita eaque, sequi voluptas officiis eos doloremque delectus eveniet magnam a, assumenda eum obcaecati soluta modi. Nihil, nostrum voluptas.
+  Omnis veritatis cupiditate necessitatibus blanditiis officia eaque eligendi deleniti, cumque obcaecati sint doloribus laudantium minus saepe? Fugit alias dicta adipisci ab tempora quos amet sed? Tempora, nemo! Illum, ut sint!
+  Velit ipsam beatae aspernatur illum dolorum, ducimus reprehenderit ab quo aut, temporibus fuga nemo tempore? Perferendis porro aspernatur, quibusdam alias, est id amet quod ad reprehenderit, culpa dolorem nobis quis?
+  Non eos maiores deleniti eaque deserunt quod, veniam nam molestiae, inventore ab beatae laborum? Beatae cupiditate quaerat deserunt sequi incidunt, labore nemo veritatis, nesciunt, quasi minus repellat nam suscipit facilis!
+  Repudiandae dolore, eum facilis velit praesentium rerum eveniet, nemo modi blanditiis commodi ut voluptatum dolorem facere minus dolor rem aut iusto numquam enim aspernatur architecto eaque illum inventore? Expedita, repellat?
+  Voluptate, atque! In tempora maiores eius sequi distinctio rem assumenda dolor neque dolore unde, enim sed nisi explicabo totam accusantium rerum pariatur id dolores quam obcaecati. Quia incidunt eaque voluptas.
+  Laudantium molestias, sit, ea nihil ex blanditiis rem obcaecati nisi, illum fugiat quam. Porro nobis laboriosam aliquid, exercitationem illo alias? Incidunt doloribus quibusdam, ad placeat necessitatibus nostrum nam quae qui!
+  Sunt inventore consequuntur velit, iure voluptates adipisci pariatur voluptas deserunt reiciendis ipsum optio repellendus provident minima neque, iusto eaque fugit! Veniam quidem fuga sequi distinctio eum ipsum incidunt fugiat qui?
+  Blanditiis velit fugiat minima veniam id rerum deleniti quo maxime repudiandae assumenda quia eligendi dicta, dolorum beatae placeat, eaque accusamus soluta voluptas repellendus. Accusamus, natus vero mollitia quidem eaque explicabo.
+  Voluptates pariatur illo aut veniam dolore distinctio, blanditiis quas voluptatum amet, sint maxime iste, impedit est similique repellendus fugit ullam consequatur eaque dignissimos. Repellendus distinctio voluptas eaque numquam laboriosam tenetur.
+  Veniam quaerat, alias ut ducimus praesentium beatae repellendus reiciendis tempora ipsa totam veritatis iure. Consequatur autem quisquam expedita ea, corporis amet minus? Nihil inventore impedit cupiditate maiores, amet labore nesciunt!
+  Maxime animi nulla natus mollitia recusandae corrupti fugiat accusantium minima et, cumque dicta libero qui, vitae atque repellat asperiores saepe harum optio sequi aliquam ab explicabo? Tempore cupiditate voluptatum aliquam.
+  Optio esse suscipit cumque. Totam, debitis perferendis harum sed distinctio asperiores aliquid quod ad, unde itaque ullam aliquam nam consequuntur, non doloribus optio maiores numquam odit eaque culpa? Omnis, at!
+  Cupiditate magni, cumque id nam alias asperiores omnis soluta hic doloremque velit sequi, tenetur enim minima mollitia dignissimos dolore facilis. Dolorum cumque veniam perferendis magni explicabo ut deleniti rem ratione.
+  Quibusdam porro perspiciatis recusandae eaque similique dicta adipisci rem quis temporibus suscipit iure expedita quam a, dolorum repudiandae fugiat voluptas provident voluptatum reprehenderit harum eveniet, vel voluptatem. Neque, necessitatibus veritatis!
+  Expedita assumenda quam suscipit et sed id odio, eius incidunt temporibus corporis! Modi, ex officiis quibusdam nobis consectetur molestias sint cum error facere blanditiis ad architecto repudiandae. Amet, officiis quam.
+  Ab adipisci provident nesciunt esse perspiciatis quae, eaque mollitia a hic iusto ad quam sed placeat eum itaque eveniet sint. Laudantium, perspiciatis? Repellendus, non minima. Laudantium voluptatem quae sunt aspernatur.
+  Provident ipsum reprehenderit molestias quibusdam expedita ratione dolorum tempora, beatae officiis laudantium aliquid iusto necessitatibus, quidem in consequatur ipsa perferendis nisi consectetur vero. Repudiandae excepturi, sequi amet modi facilis veniam.
+  In a corrupti, ipsum nulla vitae voluptatibus impedit nihil quaerat rerum voluptatem quidem eum nostrum adipisci dolorem consectetur inventore repellendus minima, eos fuga optio neque est. Reprehenderit cum beatae assumenda.
+  Fugit vel mollitia facilis atque corporis sit soluta, minima enim error ab, commodi illum odio, distinctio rerum magni magnam excepturi vero eveniet laboriosam sapiente labore unde nobis nesciunt. Consequatur, maxime?</p>
+</body>
+</html>
