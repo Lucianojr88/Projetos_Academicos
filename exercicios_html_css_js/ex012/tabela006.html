@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agrupando Colunas com colgroup</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      .cNome{
+        background-color: aqua;
+      }
+      .cSexo{
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agrupando Colunas com colgroup</h1>
+    <table>
+      <colgroup>
+        <col class="cNome" span="2"/>
+        <col class="cSexo" span="2"/>
+        <col class="cIdade"/>
+        <col class="cProf"/>
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </tr>
+      <tr>
+        <td>Adalberto</td>
+        <td>M</td>
+        <td>31</td>
+        <td>Pedreiro</td>
+      </tr>
+      <tr>
+        <td>Adhemar</td>
+        <td>M</td>
+        <td>37</td>
+        <td>Padeiro</td>
+      </tr>
+      <tr>
+        <td>Catarine</td>
+        <td>F</td>
+        <td>28</td>
+        <td>Aux. Administração</td>
+      </tr>
+      <tr>
+        <td>Juliana</td>
+        <td>F</td>
+        <td>32</td>
+        <td>Gerente Administrativo</td>
+      </tr>
+      <tr>
+        <td>Adriano</td>
+        <td>M</td>
+        <td>31</td>
+        <td>Supervisor Operacional</td>
+      </tr>
+      <tr>
+        <td>Euler</td>
+        <td>M</td>
+        <td>27</td>
+        <td>Contador</td>
+      </tr>
+    </table>
+  </body>
+</html>
