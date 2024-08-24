@@ -33,12 +33,12 @@
       <tr>
         <th scope="col">Grupos</th>
         <th scope="col">Nomes</th>
-        <th scope="col" colspan="3">Filmes</th>
+        <th scope="colgroup" colspan="3">Filmes</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th rowspan="3">Homens</th>
+        <th rowspan="3" scope="rowgroup">Homens</th>
         <td>Wellington</td>
         <td>Bastardos Inglórios</td>
         <td>O auto da compadecida</td>
@@ -57,7 +57,7 @@
         <td>Se beber não case</td>
       </tr>
       <tr>
-        <th rowspan="2">Mulheres</th>
+        <th rowspan="2" scope="rowgroup">Mulheres</th>
         <td>Olívia</td>
         <td>Vingadores</td>
         <td>Thor</td>
@@ -70,6 +70,10 @@
         <td>O chamado</td>
       </tr>
     </tbody>
+    <tfoot><tr>
+      <th colspan="4" scope="row">Total</th>
+      <td>1000</td>
+    </tr></tfoot>
   </table>
 </body>
 </html>
