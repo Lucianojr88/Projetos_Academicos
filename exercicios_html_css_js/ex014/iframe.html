@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navegação utilizando iframes</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+    }
+    iframe{
+      display: block;
+      margin: auto;
+      width: 100%;
+      height: 300px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Teste de Navegação com iframe</h1>
+
+  <ul>
+    <li><a href="paginasExtras/pag01.html" target="frame">link 1</a></li>
+    <li><a href="paginasExtras/pag02.html" target="frame">link 2</a></li>
+    <li><a href="paginasExtras/pag03.html" target="frame">link 3</a></li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eius cum rem ipsa iure, dolor eos ab dolorem? Odit odio consequatur obcaecati enim, nobis quibusdam quas sed magni cumque? Odit!</p>
+  <iframe id="nav" name="frame" src="navegacaoIframe.png" frameborder="0"></iframe>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eius cum rem ipsa iure, dolor eos ab dolorem? Odit odio consequatur obcaecati enim, nobis quibusdam quas sed magni cumque? Odit!</p>
+</body>
+</html>
