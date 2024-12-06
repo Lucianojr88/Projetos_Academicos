@@ -7,13 +7,82 @@
   </head>
   <body>
     <h1>Teste de Formulário</h1>
+    <h2>Tela de Login</h2>
     <form action="cadastro.php" method="post" autocomplete="on">
-      <p><label for="iusu">Usuário: </label>
-        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="30" autocomplete="username" placeholder="Nome do usuário"/></p>
-        <p><label for="isenha">Senha: </label>
-        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="15" autocomplete="current-password" placeholder="digite a senha"></p>
-        <p><input type="submit" value="Enviar">
-        <input type="reset" value="Limpar"></p>
+      <p>
+        <label for="iusu">Usuário: </label>
+        <input
+          type="text"
+          name="usu"
+          id="iusu"
+          required
+          minlength="5"
+          maxlength="15"
+          size="30"
+          autocomplete="username"
+          placeholder="Nome do usuário"
+        />
+      </p>
+      <p>
+        <label for="isenha">Senha: </label>
+        <input
+          type="password"
+          name="senha"
+          id="isenha"
+          required
+          minlength="8"
+          maxlength="20"
+          size="15"
+          autocomplete="current-password"
+          placeholder="digite a senha"
+        />
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+    <h2>Controle de Notas Escolares</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+      <p>
+        <label for="inome">Nome do Aluno: </label>
+        <input
+          type="text"
+          name="nome"
+          id="inome"
+          minlength="5"
+          maxlength="30"
+          size="30"
+          placeholder="Nome Completo"
+          required
+          autocomplete="name"
+        />
+      </p>
+      <p>
+        <label for="imedia">Média: </label>
+        <input
+          type="number"
+          name="media"
+          id="imedia"
+          min="0"
+          max="10"
+          step="0.1"
+          placeholder="0 a 10"
+          required
+        />
+      </p>
+      <p>
+        <label for="imes">Período Letivo: </label>
+        <input type="month" name="mes" id="imes" value="2000-01" />
+      </p>
+      <p><label for="idate">Data da Prova: </label>
+      <input type="date" name="date" id="idate"></p>
+      <p><label for="ihora">Horário da Prova: </label>
+      <input type="time" name="hora" id="ihora"></p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
     </form>
   </body>
 </html>
